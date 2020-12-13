@@ -14,7 +14,8 @@ namespace ds
         Node tail;
 
     public:
-        Linklist(Node);
+        Linklist(void *);
+        Linklist();
     };
 } // namespace ds
 
