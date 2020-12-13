@@ -16,6 +16,7 @@ namespace ds
     public:
         Linklist(void *);
         Linklist();
+        void *operator[](int);
     };
 } // namespace ds
 
