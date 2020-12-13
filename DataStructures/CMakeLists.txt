@@ -5,10 +5,11 @@ set(this DataStructures)
 set(SRC
     src/linklist.cpp
 )
-
-
-set(LIBNAME
-    data_structures
+set(HEADERS
+    include/linklist/linklist.hpp
 )
-add_library(${LIBNAME} STATIC ${SRC})
-include_directories(include)
+
+
+add_library(${this} STATIC ${SRC} ${HEADERS})
+set_target_properties(${this} PROPERTIES FOLDER Libraries)
+target_include_directories(${this} PUBLIC include)
