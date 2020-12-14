@@ -68,6 +68,7 @@ namespace ds
             if(cursor)
             {
                 Node* lookahead = cursor->next;
+                std::cout << "Deleting " << cursor << "\n"; 
                 delete cursor;
                 cursor = lookahead;
             }
