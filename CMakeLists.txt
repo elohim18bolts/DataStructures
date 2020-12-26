@@ -6,10 +6,12 @@ project(${this} VERSION 1.0.1)
 set(SRCMAIN 
     main/main.cpp
 )
+add_subdirectory(listenToKeyboard)
 add_subdirectory(DataStructures)
 
 add_executable(main ${SRCMAIN})
-target_link_libraries(main ${this})
+target_link_libraries(main listenToKeyboard ${this}) 
+
 
 
 

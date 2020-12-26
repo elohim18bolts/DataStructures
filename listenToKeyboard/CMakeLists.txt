@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.19.1)
 
 
-set(this ListenToKeyboard)
+set(this listenToKeyboard)
 set(SRC
-    src/linklist.cpp
+    src/kbd.cpp
 )
 set(HEADERS
-    include/linklist/linklist.hpp
+    include/kbd/kbd.hpp
 )
 
 
